@@ -15,7 +15,7 @@ var APP = React.createClass({
         this.socket = io('http://rainbowbamboo.com:3000');
         this.socket.on('connect', this.connect);
         this.socket.on('disconnect', this.disconnect);
-        this.socket.on(welcome_user, this.welcome_user);
+        this.socket.on('welcome_user', this.welcome_user);
     },
 
     connect() {
