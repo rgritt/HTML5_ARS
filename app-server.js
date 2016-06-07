@@ -8,21 +8,17 @@ app.use(express.static('./node_modules/bootstrap/dist'));
 
 var server = app.listen(3000);
 var io = require('socket.io').listen(server);
-console.log("Created Server and Socket variables")
 
 io.sockets.on('connection', function (socket) {
-
-
 
 	socket.once('disconnect', function() {
 		connections.splice(connections.indexOf(socket), 1);
 		socket.disconnect();
-		console.log("Socket Disconnected: %s socket connection remaining.", connections.length);
+		console.log("Disconnected: %s sockets remaining.", connections.length);
 	});
 
 	connections.push(socket);
-    console.log("Connected Socket ID: %s", socket.id);
-    console.log("# of Sockets Connnectd: %s", connections.length);
+    console.log("Connected: %s sockets connected.", connections.length);
 });
 
-console.log("Classroom server is running at 'http://54.174.142.181:3000'");
+console.log("Polling server is running at 'http://localhost:3000'");
