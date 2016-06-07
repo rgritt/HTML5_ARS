@@ -5,12 +5,10 @@ module.exports = {
 	},
 	module: {
 		loaders: [
-		{
-			exclude: /(node_modules | app-server.js)/,
-			loader: 'babel'
-		}
+			{
+				exclude: /(node_modules|app-server.js)/,
+				loader: 'babel'
+			}
 		]
 	}
-
-
 };
