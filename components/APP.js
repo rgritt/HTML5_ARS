@@ -27,7 +27,7 @@ var APP = React.createClass({
     render() {
         return (
             <div>
-                <Header title="New Header" status={this.state.status} />
+                <Header title="Classroom Polling Session" status={this.state.status} />
             </div>
         );
     }

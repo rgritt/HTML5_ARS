@@ -14,11 +14,11 @@ io.sockets.on('connection', function (socket) {
 	socket.once('disconnect', function() {
 		connections.splice(connections.indexOf(socket), 1);
 		socket.disconnect();
-		console.log("Disconnected: %s sockets remaining.", connections.length);
+		console.log("Socket Has Disconnected: %s sockets remaining.", connections.length);
 	});
 
 	connections.push(socket);
-    console.log("Connected: %s sockets connected.", connections.length);
+    console.log("Socket Has Connected: %s sockets connected.", connections.length);
 });
 
-console.log("Classroom Server Running");
+console.log("Classroom Server Running on Port 3000");
