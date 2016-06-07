@@ -1,18 +1,18 @@
-import React from 'react'
-import Router from 'react-router'
-import APP from './components/APP'
-import Audience from './components/Audience'
-import Speaker from './components/Speaker'
-import Board from './components/Board'
-import Whoops404 from './components/Whoops404'
-var { Route, DefaultRoute, NotFoundRoute } = Router;
+var React = require('react');
+var Router = require('react-router');
+var Route = Router.Route;
+var DefaultRoute = Router.DefaultRoute;
+
+var APP = require('./components/APP');
+var Classroom = require('./components/Classroom');
+var Teacher = require('./components/Teacher');
+var Results = require('./components/Results');
 
 var routes = (
 	<Route handler={APP}>
-		<DefaultRoute handler={Audience} />
-		<Route name="speaker" path="speaker" handler={Speaker}></Route>
-		<Route name="board" path="board" handler={Board}></Route>
-		<NotFoundRoute handler={Whoops404} />
+		<DefaultRoute handler={Classroom} />
+		<Route name="teacher" path="teacher" handler={teacher}></Route>
+		<Route name="results" path="results" handler={results}></Route>
 	</Route>
 );
 
