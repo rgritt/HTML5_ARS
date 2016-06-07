@@ -12,4 +12,4 @@ io.sockets.on('connection', function (socket) {
     console.log("Connected Socket: %s", socket.id);
 });
 
-console.log("Classroom server is running at 'http://localhost:3000'");
+console.log("Classroom server is running at 'http://54.174.142.181:3000'");
