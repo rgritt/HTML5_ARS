@@ -1,6 +1,8 @@
 var express = require('express');
 var app = express();
 
+var connections = [];
+
 app.use(express.static('./public'));
 app.use(express.static('./node_modules/bootstrap/dist'));
 
@@ -9,7 +11,18 @@ var io = require('socket.io').listen(server);
 console.log("Created Server and Socket variables")
 
 io.sockets.on('connection', function (socket) {
-    console.log("Connected Socket: %s", socket.id);
+
+
+
+	socket.once('disconnect', function() {
+		connections.splice(connections.indexOf(socket), 1);
+		socket.disconnect();
+		console.log("Socket Disconnected: %s socket connection remaining.", connections.length);
+	});
+
+	connections.push(socket);
+    console.log("Connected Socket ID: %s", socket.id);
+    console.log("# of Sockets Connnectd: %s", connections.length);
 });
 
 console.log("Classroom server is running at 'http://54.174.142.181:3000'");
