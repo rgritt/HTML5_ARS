@@ -20452,7 +20452,7 @@
 	        return React.createElement(
 	            'div',
 	            null,
-	            React.createElement(Header, { title: "New Header" })
+	            React.createElement(Header, { title: "Classroom Polling Session" })
 	        );
 	    }
 

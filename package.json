@@ -1,23 +1,29 @@
 {
-  "name": "live-polling",
-  "version": "0.0.1",
-  "description": "An app that allows speakers to poll audience members",
+  "name": "HTML5_ARS",
+  "version": "0.0.0",
+  "description": "An open source application allowing teachers to quiz their students during a lecture and collect responses. Utilizing HTML5 and Socke.IO",
   "main": "app-server.js",
   "dependencies": {
-    "babel-core": "^5.8.12",
-    "babel-loader": "^5.3.2",
-    "bootstrap": "^3.3.5",
-    "express": "^4.13.1",
-    "react": "^0.13.3",
-    "socket.io": "^1.3.6",
-    "socket.io-client": "^1.3.6",
-    "webpack": "^1.10.5"
+    "babel-core": "~5.8.12",
+    "babel-loader": "~5.3.2",
+    "bootstrap": "~3.3.5",
+    "express": "~4.13.1",
+    "react": "~0.13.3",
+    "socket.io": "~1.3.6",
+    "socket.io-client": "~1.3.6",
+    "webpack": "~1.10.5"
   },
   "devDependencies": {},
   "scripts": {
-    "prestart": "webpack",
-    "start": "node app-server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Alex Banks",
-  "license": "MIT"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rgritt/HTML5_ARS.git"
+  },
+  "author": "Ryan Gritt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rgritt/HTML5_ARS/issues"
+  }
 }
