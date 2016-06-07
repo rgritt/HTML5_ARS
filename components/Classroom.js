@@ -1,13 +1,13 @@
 var React = require('react');
-var View = require('./parts/View');
+var Display = require('./parts/Display');
 
 var Classroom = React.createClass({
 	render() {
 		return (
 				<div>
-					<View if={this.props.status === 'connected'}>
+					<Display if={this.props.status === 'connected'}>
 						<h1>Join the Class</h1>
-					</View>
+					</Display>
 				</div>
 			);
 	}
