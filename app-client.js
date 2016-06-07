@@ -11,8 +11,8 @@ var Results = require('./components/Results');
 var routes = (
 	<Route handler={APP}>
 		<DefaultRoute handler={Classroom} />
-		<Route name="teacher" path="teacher" handler={teacher}></Route>
-		<Route name="results" path="results" handler={results}></Route>
+		<Route name="teacher" path="teacher" handler={Teacher}></Route>
+		<Route name="results" path="results" handler={Results}></Route>
 	</Route>
 );
 
