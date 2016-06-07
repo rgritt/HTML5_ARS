@@ -16,7 +16,7 @@ var APP = React.createClass({
     render() {
         return (
             <div>
-                <Header title="New Header" />
+                <Header title="Classroom Polling Session" />
             </div>
         );
     }

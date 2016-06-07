@@ -11,4 +11,4 @@ io.sockets.on('connection', function (socket) {
     console.log("Connected: %s", socket.id);
 });
 
-console.log("Polling server is running at 'http://localhost:3000'");
+console.log("Classroom server is running at 'http://localhost:3000'");
