@@ -10,7 +10,7 @@ var APP = React.createClass({
     },
 
     connect() {
-        alert("Connected: " +  this.socket.id);
+        alert("You're Connected: " +  this.socket.id);
     },
 
     render() {
