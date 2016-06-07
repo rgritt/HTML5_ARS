@@ -37,7 +37,7 @@ var APP = React.createClass({
         return (
             <div>
                 <Header title={this.state.title} status={this.state.status} />
-                <RouteHandler />
+                <RouteHandler {...this.state}/>
             </div>
         );
     }
