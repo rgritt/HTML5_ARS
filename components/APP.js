@@ -6,7 +6,8 @@ var APP = React.createClass({
 
     getInitialState() {
         return {
-            status: 'disconnected'
+            status: 'disconnected',
+            title: ''
         }
     },
 
@@ -14,6 +15,7 @@ var APP = React.createClass({
         this.socket = io('http://rainbowbamboo.com:3000');
         this.socket.on('connect', this.connect);
         this.socket.on('disconnect', this.disconnect);
+        this.socket.on(welcome_user, this.welcome_user);
     },
 
     connect() {
@@ -24,10 +26,14 @@ var APP = React.createClass({
         this.setState({ status: 'disconnected' });
     },
 
+    welcome_user(serverState){
+        this.setState({ title: serverState.title});
+    }
+
     render() {
         return (
             <div>
-                <Header title="Classroom Polling Session" status={this.state.status} />
+                <Header title={this.state.title} status={this.state.status} />
             </div>
         );
     }
