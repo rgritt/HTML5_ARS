@@ -14,7 +14,11 @@ var APP = React.createClass({
     },
 
     render() {
-        return (<h1>Open Source Classroom Polling Software</h1>);
+        return (
+            <div>
+                <Header title="HTML5 Classroom Polling Session" />
+            </div>
+            );
     }
 
 });
