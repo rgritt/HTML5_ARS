@@ -28,7 +28,7 @@ var APP = React.createClass({
 
     welcome_user(serverState){
         this.setState({ title: serverState.title});
-    }
+    },
 
     render() {
         return (
