@@ -1,6 +1,6 @@
 var React = require('react');
 var View = require('./parts/View');
-var joinClass = require('parts/joinClass');
+var joinClass = require('./parts/joinClass');
 
 
 var Classroom = React.createClass({
