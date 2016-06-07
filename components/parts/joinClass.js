@@ -19,25 +19,14 @@ var joinClass = React.createClass({
 					<input ref="name"
 					className="form-control"
 					required />
-
-					<br>
-
 					<label>Student ID</label>
 					<input ref="sid"
 					className="form-control"
 					required />
-
-					<br>
-
 					<label>Session ID</label>
 					<input ref="sesh"
 					className="form-control"
 					required />
-
-					<br>
-
-
-
 					<button className="btn btn-primary">Join Class</button>
 
 				</form>
