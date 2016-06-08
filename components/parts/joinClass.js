@@ -3,8 +3,8 @@ var React = require('react');
 var joinClass = React.createClass({
 
 	joinClass() {
-		var memberName = React.findDOMNode(this.refs.name).value;
-		this.props.emit('join', { name: memberName });
+		var studentName = React.findDOMNode(this.refs.name).value;
+		this.props.emit('joinClass', { name: studentName });
 	},
 
 	render() {
