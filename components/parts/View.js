@@ -1,9 +1,9 @@
 var React = require('react');
 
 var View = React.createClass({
-	render(){
+	render() {
 		return (this.props.if) ? <div>{this.props.children}</div> : null;
-	};
+	}
 });
 
 module.exports = View;
