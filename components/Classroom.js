@@ -9,8 +9,7 @@ var Classroom = React.createClass({
 				<div>
 					<View if={this.props.status === 'connected'}>
 						<h1>Join the Class</h1>
-						<joinClass></joinClass>
-
+						<joinClass />
 					</View>
 				</div>
 			);
